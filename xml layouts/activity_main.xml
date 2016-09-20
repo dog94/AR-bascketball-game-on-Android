@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   
+    tools:context="example.mycompany.myfirstarapp.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="212dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="163dp"
+            android:contentDescription="@string/hoops_image"
+            android:src="@drawable/hoops_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="153dp"
+        android:orientation="vertical" >
+
+        <Button
+            
+            android:id="@+id/startgamebutton"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Play"
+            android:text="@string/play_button_string" 
+            android:textColor="#FF5C5C" />
+
+        <Button
+            
+            android:id="@+id/button2"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Scores"
+            android:text="@string/scores_button_string" 
+            android:textColor="#FF5C5C" />
+
+        <Button
+            
+            android:id="@+id/button3"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="Options"
+            android:text="@string/options_button_string" 
+            android:textColor="#FF5C5C"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="269dp"
+            android:contentDescription="@string/basketball_image"
+            android:src="@drawable/basketball_hoop" />
+        
+    </LinearLayout>
+
+</LinearLayout>

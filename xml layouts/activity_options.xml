@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="example.mycompany.myfirstarapp.OptionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/volume_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FF5C5C" />
+
+        <SeekBar
+            android:id="@+id/SeekBar01"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="74dp"
+         android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/brightness_string"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FF5C5C" />
+
+        <SeekBar
+            android:id="@+id/SeekBar02"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.11" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+         
+      
+        
+	</LinearLayout>
+	
+         <Spinner
+             android:id="@+id/spinner1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+

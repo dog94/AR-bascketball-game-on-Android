@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="example.mycompany.myfirstarapp.PlayActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/label_ip" />
+
+        <EditText
+            android:id="@+id/ip1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="206" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/ip2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="87" />
+
+        <EditText
+            android:id="@+id/ip3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="155" />
+
+        <EditText
+            android:id="@+id/ip4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:text="59" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openSocket"
+            android:text="@string/connect"
+            android:textColor="#FF5C5C" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="openSocket"
+            android:text="@string/connect"
+            android:textColor="#FF5C5C" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:onClick="closeSocket"
+            android:text="@string/Disconnect" 
+            android:textColor="#FF5C5C" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_player_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF5C5C" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:textColor="#FF5C5C"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+	</EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendMessage"
+        android:text="Send Your Name"
+        android:textColor="#FF5C5C" />
+  
+    <Button
+        android:id="@+id/startgamebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="187dp"
+        android:onClick="Start"
+        android:textColor="#FF5C5C"
+        android:text="@string/enter" />
+
+</LinearLayout>
